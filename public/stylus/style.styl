@@ -1,0 +1,155 @@
+@import('normalize.styl')
+@import("fonts.styl")
+
+
+gris_claro = #F0F0F0
+
+body
+  font-size 16px
+  background gris_claro
+  font-family 'OldStandard', Arial
+
+h1
+  font-size 2.5em
+h2
+h3
+  font-size 1.5em
+p
+  font-size 1.5em
+ul
+  li
+    font-size 1.1em
+
+.header
+  position relative
+  .tittle
+    width 50%
+    margin 1em auto
+    text-align center
+    display inline-block
+  .boton_right
+  .boton_left
+    display inline-block
+    width 20%
+    .siguiente
+    .anterior
+      text-decoration none
+      padding .5em 1em
+      background #1a1a1a
+      border-radius 5px
+      color #ffffff
+  .boton_right
+    text-align right
+    margin-right 1em
+  .boton_left
+    margin-left 4em
+.container
+  width 90%
+  margin 1em auto
+  .integrantes
+    width 45%
+    margin-top 4em
+    display inline-block
+    vertical-align top
+    h2
+      text-transform uppercase
+      margin-left 3em
+    .nombre
+      margin-left 5em
+  .img
+    display inline-block
+    width 45%
+    margin 0
+    margin-top 5em
+  .left
+    margin-left 2em
+  .necesidad
+    .contenido
+      overflow hidden
+      .text_lef
+      .text_right
+        width 25%
+      .text_right
+        float right
+      .text_lef
+        float left
+    .img_logo
+      margin 0 auto
+      width 30%
+      img
+        width 100%
+    .arrows-up
+      width 45%
+      margin 0 auto
+      height 1em
+      position relative
+      .icon-arrow-left
+      .icon-arrow-right
+        position absolute
+      .icon-arrow-left
+        left 0
+        transform rotateZ(20deg)
+        font-size 4em
+        top -0.5em
+      .icon-arrow-right
+        right 0
+        font-size 4em
+        transform rotateZ(-20deg)
+        top -0.5em
+    .arrows-down
+      width 45%
+      margin 0 auto
+      height 1em
+      position relative
+      .icon-arrow-left
+      .icon-arrow-right
+        position absolute
+      .icon-arrow-left
+        left 0
+        transform rotateZ(-20deg)
+        font-size 4em
+      .icon-arrow-right
+        right 0
+        transform rotateZ(20deg)
+        font-size 4em
+    .contenido_down
+      overflow hidden
+      .text_lef_down
+      .text_right_down
+        width 25%
+      .text_right_down
+        float right
+      .text_lef_down
+        float left
+  .sistema
+  .proyecto
+    width 45%
+    display inline-block
+  .align
+    vertical-align top
+    margin 0 2em
+    h2
+      margin-top 0
+    ul
+      li
+        font-size 1.3em
+  .sistema
+    h2
+      margin-top 0
+    ul
+      li
+        font-size 1.3em
+  .requisitos1
+     margin-bottom 1.8em
+     background #fcfcfc
+     box-shadow 0 3px 0 rgba(12,12,12,0.03)
+     border 1px solid #ddd
+
+  .alcance
+    width 85%
+    margin 0 auto
+    font-size 1.2em
+    ul
+      margin-left 1em
+      li
+        margin .2em 0
