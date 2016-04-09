@@ -1,12 +1,14 @@
 @import('normalize.styl')
 @import("fonts.styl")
+@import('slides.styl')
 
 
 gris_claro = #F0F0F0
+gris_mas_claro = #F0F0F0
 
 body
   font-size 16px
-  background gris_claro
+  background #fff
   font-family 'OldStandard', Arial
 
 h1
@@ -20,13 +22,56 @@ ul
   li
     font-size 1.1em
 
+.boton
+  text-decoration none
+  color #fff
+  font-weight bold
+  padding 12px 20px
+  font-size 18px
+  border-radius 10px
+  background-color #666666
+  box-shadow 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2)
+  position relative
+  border-bottom 1px solid rgba(255,255,255,0.2)
+  display inline-block
+  font-family Arial, Helvetica, sans
+  text-shadow 0px -1px 0px rgba(0,0,0,0.2)
+  transition all 0.20s linear
+  line-height 2em
+
+
+.boton:hover
+  box-shadow 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2)
+  color #fff !important
+
+
+.boton:active
+   top 7px
+   box-shadow 0 2px 0 #393939, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2)
+   color #fff !important
+
+
+.formaBoton
+   border-radius 5px
+   padding-left 25px
+   padding-right 25px
+
+.index
+  .container
+    min-height 450px
+    .integrantes
+      margin-top 6.5em !important
+      .nombre
+        margin-top 0.5em
+        margin-bottom 0.5em
 .header
   position relative
   .tittle
     width 50%
-    margin 1em auto
+    margin 0 auto
     text-align center
     display inline-block
+    margin-top .5em
   .boton_right
   .boton_left
     display inline-block
@@ -41,11 +86,21 @@ ul
   .boton_right
     text-align right
     margin-right 1em
+    vertical-align top
+    margin-top 1em
   .boton_left
     margin-left 4em
+    vertical-align top
+    margin-top 1em
 .container
+  background gris_mas_claro
   width 90%
-  margin 1em auto
+  margin 0 auto
+  margin-top 2.5em
+  boder-radius 5px
+  min-height 500px
+  box-shadow 0px 0px 5px 9px rgba(0,0,0,0.65)
+  position relative
   .integrantes
     width 45%
     margin-top 4em
@@ -65,91 +120,123 @@ ul
     margin-left 2em
   .necesidad
     .contenido
-      overflow hidden
+      width 100%
+      position relative
       .text_lef
       .text_right
-        width 25%
+        width 20%
+        position absolute
       .text_right
-        float right
+        right 0
       .text_lef
-        float left
+        left 2em
+        p
+          margin-left 1em
     .img_logo
       margin 0 auto
       width 30%
       img
         width 100%
     .arrows-up
-      width 45%
+      width 50%
       margin 0 auto
       height 1em
       position relative
+      top 5em
       .icon-arrow-left
       .icon-arrow-right
         position absolute
+        bottom -0.5em
       .icon-arrow-left
-        left 0
+        left -0.5em
         transform rotateZ(20deg)
         font-size 4em
         top -0.5em
       .icon-arrow-right
-        right 0
+        right -.5em
         font-size 4em
         transform rotateZ(-20deg)
         top -0.5em
     .arrows-down
-      width 45%
+      width 50%
       margin 0 auto
       height 1em
       position relative
       .icon-arrow-left
       .icon-arrow-right
         position absolute
+        top -0.5em
       .icon-arrow-left
-        left 0
+        left -0.5em
         transform rotateZ(-20deg)
         font-size 4em
       .icon-arrow-right
-        right 0
+        right -0.5em
         transform rotateZ(20deg)
         font-size 4em
     .contenido_down
-      overflow hidden
+      width 100%
+      position relative
       .text_lef_down
       .text_right_down
-        width 25%
+        width 20%
+        position absolute
+        bottom -5em
       .text_right_down
-        float right
+        right 1em
       .text_lef_down
-        float left
+        left 2em
+        p
+          margin-left 1em
   .sistema
   .proyecto
     width 45%
     display inline-block
+    margin-top 3em
   .align
     vertical-align top
     margin 0 2em
+    margin-top 3em
     h2
       margin-top 0
     ul
+      margin-top 3em
       li
         font-size 1.3em
   .sistema
     h2
       margin-top 0
     ul
+      margin-top 3em
       li
         font-size 1.3em
+        margin 0.5em 0
   .requisitos1
      margin-bottom 1.8em
      background #fcfcfc
      box-shadow 0 3px 0 rgba(12,12,12,0.03)
      border 1px solid #ddd
 
+  .delimitacion
+    width 40%
+    position absolute
+    right 1em
+    p
+      padding-top 1em
+      font-size 1.5em
+    ul
+      margin-left 2em
+      li
+        font-size 1.3em
+
   .alcance
     width 85%
     margin 0 auto
     font-size 1.2em
+    p
+      width 50%
+      padding-top 1em
     ul
       margin-left 1em
       li
-        margin .2em 0
+        margin 0.2em 0
