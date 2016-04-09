@@ -5,6 +5,7 @@
 
 gris_claro = #F0F0F0
 gris_mas_claro = #F0F0F0
+girs_oscuro = #333333
 
 body
   font-size 16px
@@ -101,6 +102,7 @@ ul
   min-height 500px
   box-shadow 0px 0px 5px 9px rgba(0,0,0,0.65)
   position relative
+  max-width 1250px
   .integrantes
     width 45%
     margin-top 4em
@@ -126,12 +128,15 @@ ul
       .text_right
         width 20%
         position absolute
+        border-radius 50%
+        text-align center
+        top 1em
+        background rgba(184,100, 123, .7)
       .text_right
-        right 0
+        right 2em
       .text_lef
         left 2em
-        p
-          margin-left 1em
+
     .img_logo
       margin 0 auto
       width 30%
@@ -148,15 +153,15 @@ ul
         position absolute
         bottom -0.5em
       .icon-arrow-left
-        left -0.5em
-        transform rotateZ(20deg)
+        left -0.2em
+        transform rotateZ(15deg)
         font-size 4em
-        top -0.5em
+        top 0
       .icon-arrow-right
-        right -.5em
+        right -.2em
         font-size 4em
-        transform rotateZ(-20deg)
-        top -0.5em
+        transform rotateZ(-15deg)
+        top 0
     .arrows-down
       width 50%
       margin 0 auto
@@ -168,11 +173,11 @@ ul
         top -0.5em
       .icon-arrow-left
         left -0.5em
-        transform rotateZ(-20deg)
+        transform rotateZ(-15deg)
         font-size 4em
       .icon-arrow-right
         right -0.5em
-        transform rotateZ(20deg)
+        transform rotateZ(15deg)
         font-size 4em
     .contenido_down
       width 100%
@@ -181,13 +186,17 @@ ul
       .text_right_down
         width 20%
         position absolute
-        bottom -5em
+        bottom -4em
+        border-radius 50%
+        text-align center
+        background rgba(184,100, 123, .7)
       .text_right_down
         right 1em
       .text_lef_down
         left 2em
         p
-          margin-left 1em
+          padding 1em 0.2em
+
   .sistema
   .proyecto
     width 45%
@@ -216,16 +225,26 @@ ul
      background #fcfcfc
      box-shadow 0 3px 0 rgba(12,12,12,0.03)
      border 1px solid #ddd
-
+  .requi
+    width 80%
+    margin 0 auto
+    padding-top 3em
+    ul
+      display inline-block
+      width 43%
+      vertical-align top
+      li
+        font-size 1.4em
+        margin 0.2em 0
   .delimitacion
     width 40%
     position absolute
     right 1em
     p
-      padding-top 1em
-      font-size 1.5em
+      font-size 1.6em
     ul
       margin-left 2em
+      margin-top 0
       li
         font-size 1.3em
 
@@ -236,7 +255,58 @@ ul
     p
       width 50%
       padding-top 1em
+      margin-bottom 0.5em
     ul
-      margin-left 1em
+      margin-left 2em
+      margin-top 0
       li
         margin 0.2em 0
+
+  .bibliografia
+    padding-top 1.5em
+    ul
+      list-style none
+      li
+        width 90%
+        margin 0.5em auto
+        font-size 1.1em
+.problema
+  .necesidad
+    .arrows_up
+      top 4em !important
+    .rslides
+      li
+        margin-top: 3.5em
+    .contenido
+      .text_right
+        p
+          padding 0.5em
+      .text_lef
+        p
+          padding 0.5em
+    .contenido_down
+      width 100%
+      position relative
+      .text_lef_down
+      .text_right_down
+        bottom -3em
+      .text_lef_down
+        p
+          padding 0.5em
+      .text_right_down
+        p
+          padding 0.5em
+    .arrows-down
+      bottom 1.5em
+      .icon-arrow-left
+        left -0.2em
+        transform rotateZ(-12deg)
+      .icon-arrow-right
+        right -0.2em
+        transform rotateZ(12deg)
+
+.objesiste
+  .container
+    .proyecto
+      margin-left 3.5em
+      margin-right 2.5em

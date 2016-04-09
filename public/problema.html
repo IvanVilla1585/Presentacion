@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <title>Presentación</title>
   <link rel="stylesheet" href="./css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
-<body>
+<body class="problema">
   <header class="header">
     <div class="boton_left">
-      <a href="necesidad.html" class="anterior boton colorBoton formaBoton">Anterior</a>
+      <a href="index.html" class="anterior boton colorBoton formaBoton">Anterior</a>
     </div>
     <h1 class="tittle">Problema</h1>
     <div class="boton_right">
-      <a href="objetivosproyecto.html" class="siguiente boton colorBoton formaBoton">Siguiente</a>
+      <a href="necesidad.html" class="siguiente boton colorBoton formaBoton">Siguiente</a>
     </div>
   </header>
   <section class="container">
@@ -20,7 +21,7 @@
       <div class="contenido">
         <article class="text_lef">
           <p>
-            Indicadores inprecisos de productos elaborados y materia prima consumida
+            Indicadores imprecisos productos elaborados y materia prima consumida
           </p>
         </article>
         <article class="text_right">
@@ -33,9 +34,12 @@
         <span class="icon-arrow-left"></span>
         <span class="icon-arrow-right"></span>
       </div>
-      <figure class="img_logo">
-        <img src="/images/logo.jpg" alt="">
-      </figure>
+      <ul class="rslides">
+					<li><img src="images/problema1.jpg" id="imagen1" alt=""></li>
+					<li><img src="images/problema3.jpg" id="imagen2" alt=""></li>
+					<li><img src="images/problema2.jpg" id="imagen3" alt=""></li>
+					<li><img src="images/problema4.jpg" id="imagen4" alt=""></li>
+			</ul>
       <div class="arrows-down">
         <span class="icon-arrow-left"></span>
         <span class="icon-arrow-right"></span>
@@ -43,7 +47,7 @@
       <div class="contenido_down">
         <article class="text_lef_down">
           <p>
-            Registro y control de inventarios manual y en hojas de kardex
+            Control de inventarios en hojas de kardex
           </p>
         </article>
         <article class="text_right_down">
@@ -54,5 +58,11 @@
       </div>
     </div>
   </section>
+  <script src="js/vendors/responsiveslides.min.js"></script>
+	<script>
+  		$(function() {
+    		$(".rslides").responsiveSlides();
+  		});
+	</script>
 </body>
 </html>
