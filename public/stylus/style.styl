@@ -1,62 +1,26 @@
 @import('normalize.styl')
 @import("fonts.styl")
 @import('slides.styl')
+@import('materialize.styl')
 
 
 gris_claro = #F0F0F0
-gris_mas_claro = #F0F0F0
+gris_mas_claro = #f7f7f7
 girs_oscuro = #333333
 
 body
   font-size 16px
-  background #fff
+  background gris_mas_claro
   font-family 'OldStandard', Arial
 
-h1
-  font-size 2.5em
-h2
-h3
-  font-size 1.5em
 p
   font-size 1.5em
 ul
   li
-    font-size 1.1em
-
-.boton
-  text-decoration none
-  color #fff
-  font-weight bold
-  padding 12px 20px
-  font-size 18px
-  border-radius 10px
-  background-color #666666
-  box-shadow 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2)
-  position relative
-  border-bottom 1px solid rgba(255,255,255,0.2)
-  display inline-block
-  font-family Arial, Helvetica, sans
-  text-shadow 0px -1px 0px rgba(0,0,0,0.2)
-  transition all 0.20s linear
-  line-height 2em
-
-
-.boton:hover
-  box-shadow 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2)
-  color #fff !important
-
-
-.boton:active
-   top 7px
-   box-shadow 0 2px 0 #393939, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2)
-   color #fff !important
-
-
-.formaBoton
-   border-radius 5px
-   padding-left 25px
-   padding-right 25px
-
+    font-size 1.3em
+    text-align justify
+.margin_top
+  margin-top 2em
 .index
   .container
     min-height 450px
@@ -66,58 +30,161 @@ ul
         margin-top 0.5em
         margin-bottom 0.5em
 .header
-  position relative
+  margin 1em 0
   .tittle
-    width 50%
-    margin 0 auto
     text-align center
-    display inline-block
-    margin-top .5em
-  .boton_right
-  .boton_left
-    display inline-block
-    width 20%
-    .siguiente
-    .anterior
-      text-decoration none
-      padding .5em 1em
-      background #1a1a1a
-      border-radius 5px
-      color #ffffff
-  .boton_right
-    text-align right
-    margin-right 1em
-    vertical-align top
-    margin-top 1em
-  .boton_left
-    margin-left 4em
-    vertical-align top
-    margin-top 1em
-.container
-  background gris_mas_claro
-  width 90%
+    margin 0
+
+.container_demo
+  min-height 500px
+  .row
+    .col
+      .mapa
+        margin 0
+        width 100%
+        img
+          width 100%
+
+.container_demo
+  .row
+    .col
+      .long
+        padding-top 1em
+        width 70%
+        margin 0 auto
+        .mapa
+          margin 0
+          width 100%
+          img
+            width 100%
+    .circulo_control
+      text-align center
+      figure.proveedor
+        position absolute
+        left 0
+        top -3em
+      .circulo
+        margin 1em auto
+        width 250px
+        height 250px
+        border-radius 50%
+        background #1D2939
+        line-height 250px
+        p
+          text-align center
+          color #fff
+    .imagenes_alcance_top
+      text-align center
+      position relative
+
+      figure.proveedores
+        position absolute
+        left 12em
+        top -13em
+        margin 0
+        width 20%
+        margin 0 0.5em
+
+      figure.pedidos
+        position absolute
+        left 45%
+        top -1em
+        width 18%
+
+      figure
+        margin 0
+        width 50%
+        margin 0 0.5em
+        img
+          width 100%
+          border-radius 50%
+    .imagenes_alcance_down
+      text-align center
+      margin-top 1em
+      position relative
+      figure.maquina
+        position absolute
+        right 15em
+        top -5em
+        width 15%
+      figure.producto
+        position absolute
+        left 18.5em
+        top 2em
+        width 18%
+      figure
+        margin 0 auto
+        width 50%
+        margin 0 0.5em
+        img
+          width 100%
+          border-radius 50%
+    .circulo_control
+      text-align center
+      position relative
+      text-align center
+      figure.materia
+        position absolute
+        left -2em
+        top -6em
+      figure.reportes
+        position absolute
+        right 1em
+        top -4em
+        width 30%
+      figure
+        margin 0
+        width 20%
+        display inline-block
+        vertical-align top
+        img
+          width 100%
+          border-radius 50%
+      .circulo
+        display inline-block
+        vertical-align top
+        background #1D2939
+        p
+          margin-top 0
+          color #ffffff
+
+.margin_li
+  margin-left 2em
+  font-size 1.5em
+#kardex
+  width 18%
+  margin-top 2em
+  position absolute
+  right 1em
+  top -12em
+  img
+    width 100%
+#margin_rigth
+  margin-right 7em
+#margin_left
+  margin-left 7em
+.container_demo
+.container_pre
+  width 95%
   margin 0 auto
   margin-top 2.5em
-  boder-radius 5px
-  min-height 500px
-  box-shadow 0px 0px 5px 9px rgba(0,0,0,0.65)
-  position relative
+  padding-bottom 2em
   max-width 1250px
+  margin-bottom 2em
+  max-width 1250px !important
   .integrantes
-    width 45%
     margin-top 4em
-    display inline-block
-    vertical-align top
-    h2
+    h4
       text-transform uppercase
-      margin-left 3em
+      margin-left 2em
     .nombre
-      margin-left 5em
+      margin-left 4em
   .img
-    display inline-block
-    width 45%
-    margin 0
-    margin-top 5em
+    width 100%
+    margin 0 auto
+    margin-top 4em
+    img
+      width 100%
   .left
     margin-left 2em
   .necesidad
@@ -126,16 +193,34 @@ ul
       position relative
       .text_lef
       .text_right
-        width 20%
+        width 27%
         position absolute
         border-radius 50%
         text-align center
-        top 1em
-        background rgba(184,100, 123, .7)
+        background #1D2939
+        min-height 190px
+        display flex
+        align-items center
+        justify-content center
       .text_right
         right 2em
       .text_lef
         left 2em
+      .indi
+        left -3em
+        top -5em
+        p
+          width 75%
+          margin 0
+          color #ffffff
+      .manual
+        right -3em
+        top -5em
+        p
+          width 75%
+          margin 1em auto
+          margin-top 0.5em
+          color #ffffff
 
     .img_logo
       margin 0 auto
@@ -156,12 +241,12 @@ ul
         left -0.2em
         transform rotateZ(15deg)
         font-size 4em
-        top 0
+        top -0.8em
       .icon-arrow-right
         right -.2em
         font-size 4em
         transform rotateZ(-15deg)
-        top 0
+        top -0.8em
     .arrows-down
       width 50%
       margin 0 auto
@@ -172,11 +257,11 @@ ul
         position absolute
         top -0.5em
       .icon-arrow-left
-        left -0.5em
+        left -0.2em
         transform rotateZ(-15deg)
         font-size 4em
       .icon-arrow-right
-        right -0.5em
+        right -0.2em
         transform rotateZ(15deg)
         font-size 4em
     .contenido_down
@@ -184,19 +269,48 @@ ul
       position relative
       .text_lef_down
       .text_right_down
-        width 20%
+        width 27%
+        min-height 190px
         position absolute
-        bottom -4em
         border-radius 50%
         text-align center
-        background rgba(184,100, 123, .7)
+        background #1D2939
+        display flex
+        align-items center
+        justify-content center
       .text_right_down
         right 1em
       .text_lef_down
         left 2em
         p
           padding 1em 0.2em
-
+          color #ffffff
+      .indi_down_ne
+        left -2em
+        bottom -3em
+        p
+          width 75%
+          margin 0
+          color #ffffff
+      .manual_down_ne
+        right -2em
+        bottom -3m
+        p
+          width 85%
+          margin 1em auto
+          color #ffffff
+      .nece
+      .nece1
+        bottom -7em
+      .bottom_left
+      .bottom_right
+        bottom -4em
+      .nece
+      .bottom_left
+        left -3em
+      .nece1
+      .bottom_right
+        right -3em
   .sistema
   .proyecto
     width 45%
@@ -281,21 +395,36 @@ ul
       .text_right
         p
           padding 0.5em
+          color #ffffff
       .text_lef
         p
           padding 0.5em
+          color #ffffff
     .contenido_down
       width 100%
       position relative
       .text_lef_down
+        p
+          padding 0.5em
+          color #ffffff
       .text_right_down
+        p
+          padding 0.5em
+          color #ffffff
+      .indi_down
+        left -1em
+        bottom 1em
+        p
+          width 75%
+          margin 1em auto
+          color #ffffff
+      .manual_down
+        right -1em
         bottom -3em
-      .text_lef_down
         p
-          padding 0.5em
-      .text_right_down
-        p
-          padding 0.5em
+          width 95%
+          margin 1em auto
+          color #ffffff
     .arrows-down
       bottom 1.5em
       .icon-arrow-left
@@ -306,7 +435,12 @@ ul
         transform rotateZ(12deg)
 
 .objesiste
-  .container
-    .proyecto
-      margin-left 3.5em
-      margin-right 2.5em
+  width 85%
+  .proyecto, .sistema
+    margin-top 1em
+
+
+.bibliografia
+  padding-top 0
+  ul
+    margin-top 0
