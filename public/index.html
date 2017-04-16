@@ -4,26 +4,759 @@
   <meta charset="UTF-8">
   <title>Presentación</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body class="index">
-  <header class="header">
-    <div class="boton_left">
+  <div id="fullpage">
+    <div class="section">
+      <header class="header row">
+        <div class="col m12">
+          <h3 class="tittle">Sistema de Productos e Inventario "Refrescos Chupi Flum"</h3>
+        </div>
+      </header>
+      <section class="container_pre">
+        <div class="row">
+          <div class="col s6 integrantes">
+              <h4><strong>Integrantes:</strong></h4>
+              <h4 class="nombre">Leidy Arredondo.</h4>
+              <h4 class="nombre">Ivan Dario Villa.</h4>
+          </div>
+          <div class="col s5 offset-s1">
+            <figure class="img">
+              <img src="/images/logo.png" alt="">
+            </figure>
+          </div>
+        </div>
+      </section>
     </div>
-    <h1 class="tittle">Sistema de Productos e Inventario "Refrescos Chupi Flum"</h1>
-    <div class="boton_right">
-      <a href="problema.html" class="siguiente boton colorBoton formaBoton" >Siguiente</a>
+    <div class="section">
+      <header class="header row">
+        <div class="col m12">
+          <h3 class="tittle">Problema</h3>
+        </div>
+      </header>
+      <section class="container_demo">
+        <div class="row necesidad">
+          <div class="col s12">
+            <div class="contenido">
+              <article class="text_lef indi">
+                <p>
+                  Indicadores imprecisos productos elaborados y materia prima consumida.
+                </p>
+              </article>
+              <article class="text_right manual">
+                <p>
+                  Sistema de información totalmente manual.
+                </p>
+              </article>
+            </div>
+            <div class="arrows-up">
+              <span class="icon-arrow-left"></span>
+              <span class="icon-arrow-right"></span>
+            </div>
+            <ul class="rslides">
+              <li><img src="images/problema1.jpg" id="imagen1" alt=""></li>
+              <li><img src="images/problema3.jpg" id="imagen2" alt=""></li>
+              <li><img src="images/problema2.jpg" id="imagen3" alt=""></li>
+              <li><img src="images/problema4.jpg" id="imagen4" alt=""></li>
+            </ul>
+            <div class="arrows-down">
+              <span class="icon-arrow-left"></span>
+              <span class="icon-arrow-right"></span>
+            </div>
+            <div class="contenido_down">
+              <article class="text_lef_down indi_down bottom_left">
+                <p>
+                  Control de inventarios en hojas de kardex.
+                </p>
+              </article>
+              <article class="text_right_down manual_down bottom_right">
+                <p style="color: #ffffff">
+                  Dosificación de los productos registrada en hojas y sin control en las cantidades.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </header>
-  <section class="container">
-    <div class="integrantes left">
-      <h2><strong>Integrantes:</strong></h2>
-      <h3 class="nombre">Leidy Arredondo</h3>
-      <h3 class="nombre">Andres Felipe Sierra</h3>
-      <h3 class="nombre">Ivan Dario Villa</h3>
+    <div class="section">
+      <header class="header row">
+        <div class="col m12">
+          <h3 class="tittle">Necesidad</h3>
+        </div>
+      </header>
+      <section class="container_demo">
+        <div class="row necesidad">
+          <div class="col s12">
+            <div class="contenido">
+              <article class="text_lef indi">
+                <p>
+                  Sistematizar los procesos de producción e inventario.
+                </p>
+              </article>
+              <article class="text_right manual">
+                <p>
+                  Mantener la información almacenada y centralizada.
+                </p>
+              </article>
+            </div>
+            <div class="arrows-up">
+              <span class="icon-arrow-left"></span>
+              <span class="icon-arrow-right"></span>
+            </div>
+            <ul class="rslides">
+              <li><img src="images/proceso.jpg" id="imagen1" alt=""></li>
+              <li><img src="images/proceso1.jpg" id="imagen2" alt=""></li>
+              <li><img src="images/proceso2.jpg" id="imagen3" alt=""></li>
+              <li><img src="images/proceso3.jpg" id="imagen4" alt=""></li>
+            </ul>
+            <div class="arrows-down">
+              <span class="icon-arrow-left"></span>
+              <span class="icon-arrow-right"></span>
+            </div>
+            <div class="contenido_down">
+              <article class="text_lef_down indi_down_ne nece">
+                <p>
+                  Optimizar procesos de compras, producción e inventario.
+                </p>
+              </article>
+              <article class="text_right_down manual_down_ne nece1">
+                <p>
+                  Manejo adecuado inventario de materia prima y producto terminado.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <figure class="img">
-      <img src="/images/logo.png" alt="">
-    </figure>
-  </section>
+    <div class="section">
+      <header class="header row">
+        <div class="col m12">
+          <h3 class="tittle">Delimitación y Alcance</h3>
+        </div>
+      </header>
+      <section class="container_demo">
+        <div class="row">
+          <div class="col s12">
+            <div class="circulo_control row">
+              <figure class="materia">
+                <img src="images/materia.jpeg" alt="">
+              </figure>
+              <div class="circulo">
+                <p>
+                  Control y registro de
+                </p>
+              </div>
+              <figure class="margin_left reportes">
+                <img src="images/kardex.jpeg" alt="">
+              </figure>
+            </div>
+            <div class="imagenes_alcance_top row">
+              <div class="col m4">
+                <figure class="proveedores">
+                  <img style="width: 100%" src="images/proveedores.jpeg" alt="">
+                </figure>
+              </div>
+              <div class="col m4">
+                <figure class="pedidos">
+                  <img src="images/pedidos.jpeg" alt="">
+                </figure>
+              </div>
+              <div class="col m4">
+                <figure id="kardex" class="kardex">
+                  <img src="images/reportes.jpeg" alt="">
+                </figure>
+              </div>
+            </div>
+            <div class="imagenes_alcance_down row">
+              <div class="col m4">
+                <figure>
+                  <img src="images/ordenes.jpeg" alt="">
+                </figure>
+              </div>
+              <div class="col m4">
+                <figure class="producto">
+                  <img src="images/productos.jpeg" alt="">
+                </figure>
+              </div>
+              <div class="col m4">
+                <figure class="maquina">
+                  <img src="images/maquinas.jpeg" alt="">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <header class="header row" style="margin-bottom: 1em; margin-top: 0">
+        <div class="col m12">
+          <h3 class="tittle">Objetivos del Sistema</h3>
+        </div>
+      </header>
+      <section class="container objesiste">
+        <div class="proyecto align" style="margin-top: 1em">
+          <h4><strong>GENERAL:</strong></h4>
+          <ul>
+            <li class="margin_li" style="font-size: 1.8em">
+              * Desarrollar un aplicativo web para el control y registro de los procesos de producción de la fábrica de refrescos “Chupi Flum”.
+            </li>
+          </ul>
+        </div>
+        <div class="sistema" style="margin-top: 1em">
+          <h4><strong>ESPECÍFICOS:</strong></h4>
+          <ul>
+            <li class="margin_li" style="margin-top: 0.5em; font-size: 1.8em">
+              * Administrar el registro de la información de los usuarios y proveedores.
+            </li>
+            <li class="margin_li" style="margin-top: 0.5em; font-size: 1.8em">
+              * Garantizar el control de los procedimientos que se realizan para las órdenes de producción.
+            </li>
+            <li class="margin_li" style="margin-top: 0.5em; font-size: 1.8em">
+              * Realizar el control de materia prima y producto terminado.
+            </li>
+            <li class="margin_li" style="margin-top: 0.5em; font-size: 1.8em">
+              * Administrar la información, generando informes estadísticos de productos elaborado por mes.
+            </li>
+            <li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <header class="header row" style="margin-bottom: 5em; margin-top: 0">
+        <div class="col m12">
+          <h3 class="tittle">Diseño Global del Sistema</h3>
+        </div>
+      </header>
+    </div>
+    <div class="section">
+      <header class="header row" style="margin-bottom: 5em; margin-top: 0">
+        <div class="col m12">
+          <h3 class="tittle">Módulos del Sistema Refrescos Chupi Flum</h3>
+        </div>
+      </header>
+      <section class="container_demo">
+        <div class="row">
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 480px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Producto Terminado</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener la información de cada producto y controlar el inventario. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 480px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Materia Prima</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener la información de la materia prima y controlar el inventario. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 480px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Formula</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener cada uno de los procesos registrados y controlar la correcta ejecución para elaborar el producto. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 480px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Procesos</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener la formula de cada producto y controlar las cantidades para elaborar el producto y optimizar el consumo de la materia prima. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <header class="header row" style="margin-bottom: 5em; margin-top: 0">
+        <div class="col m12">
+          <h3 class="tittle">Módulos del Sistema Refrescos Chupi Flum</h3>
+        </div>
+      </header>
+      <section class="container_demo">
+        <div class="row">
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 480px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Maquina</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener la información de cada maquina y controlar cada uno de los procesos que se ejecutan en la misma. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 480px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Orden de Producción</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener la información de cuantos productos se elaboran cada que se produce un producto y que materia prima se gasta en la producción de los mismos. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 480px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Ejecución Orden</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener claridad cuantos productos se elaboran en el día y controlar el inventario de producto terminado. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Ejecutar una orden</li>
+                  <li style="margin-left: 0.5em">Validar estado de la orden</li>
+                  <li style="margin-left: 0.5em">Validar cantidad de productos de la orden</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 480px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Pedidos</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener el registro de cada pedido y controlar las cantidades de materia prima que se compran para mantener actualizado el inventario. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <header class="header row" style="margin-bottom: 5em; margin-top: 0">
+        <div class="col m12">
+          <h3 class="tittle">Módulos del Sistema Refrescos Chupi Flum</h3>
+        </div>
+      </header>
+      <section class="container_demo">
+        <div class="row">
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 420px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Proveedor</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener la información de cada proveedor y controlar que productos se le piden a cada uno. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 420px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Usuario</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener la información de quien ejecuta cada uno de los procesos de la fabrica. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 420px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Roles</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener control al acceso de la información de la fabrica. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="card" style="padding-top: 20px; min-height: 420px">
+              <span class="card-title" style="padding: 20px; font-weight: 700">Permisos</span>
+              <div class="card-content" style="font-size: 14px">
+                <p>
+                  Resuelve la problematica de no tener restricciones para cada una de las tareas que se ejecutan en la fabrica. Conformado por:
+                </p>
+                <ul style="list-style: circle">
+                  <li style="margin-left: 0.5em">Crear</li>
+                  <li style="margin-left: 0.5em">Modificar</li>
+                  <li style="margin-left: 0.5em">Consultar</li>
+                  <li style="margin-left: 0.5em">Eliminar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <header class="header row" style="margin-bottom: 1em; margin-top: 0">
+        <div class="col m12">
+          <h3 class="tittle">Reglas de Negocio</h3>
+        </div>
+      </header>
+      <section class="container_demo" >
+        <div class="row" style="background: #ffffff">
+          <h4 style="margin: 0; width: 100%; text-align: center; padding-top: 0.5em">Módulo Usuarios</h4>
+          <div class="col s6">
+            <table class="bordered">
+              <thead>
+              <tr>
+                <th>Regla</th>
+                <th>Descripción</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Crear un usuario en el sistema</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de registrar un usuario en el sistema se requieren los siguientes campos:
+                  primer nombre, primer apellido, nombre de usuario, contraseña, correo, rol.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Validación contraseña</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de registrar un usuario en el sistema, la contraseña debe contener una longitud de al menos 8 caracteres y debe ser unica en el sistema.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Validación nombre de usuario</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de registrar un usuario en el sistema, el nombre de usuario debe ser unico en el sistema.
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col s6">
+            <table class="bordered">
+              <thead>
+              <tr>
+                <th>Regla</th>
+                <th>Descripción</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 35%; font-size: 18px">Validación correo</td>
+                  <td style="width: 65%; font-size: 18px">
+                    Al momento de registrar un usuario en el sistema, el correo debe cumplir con el formato de un correo electronico y debe ser unico en el sistema.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 35%; font-size: 18px">Eliminar un usuario</td>
+                  <td style="width: 65%; font-size: 18px">
+                    Al momento de eliminar un usuario en el sistema y este tenga asociado un pedido, una orden de producción o ejecución de una orden de producción solo se podra inactivar.
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 35%; font-size: 18px">Ingreso al formulario de usuarios</td>
+                  <td style="width: 65%; font-size: 18px">
+                    Para ingresar al formulario de usuario se debe contar con el respectivo permiso.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <header class="header row" style="margin-bottom: 1em; margin-top: 0">
+        <div class="col m12">
+          <h3 class="tittle">Reglas de Negocio</h3>
+        </div>
+      </header>
+      <section class="container_demo" >
+        <div class="row" style="background: #ffffff">
+          <div class="col s6">
+            <h4 style="margin: 0; width: 100%; text-align: center; padding-top: 0.5em">Módulo Producto Terminado</h4>
+            <table class="bordered">
+              <thead>
+              <tr>
+                <th>Regla</th>
+                <th>Descripción</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Crear un producto en el sistema</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de registrar un producto en el sistema se requieren los siguientes campos:
+                  nombre, unidad de medida, categoria, stock, presentación, formula, procesos.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Eliminar un producto terminado</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de eliminar un producto en el sistema y este tenga asociado una orden de producción solo se podra inactivar.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Ingreso al formulario de usuarios</td>
+                <td style="width: 65%; font-size: 18px">
+                  Para ingresar al formulario de producto terminado se debe contar con el respectivo permiso.
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col s6">
+            <h4 style="margin: 0; width: 100%; text-align: center; padding-top: 0.5em">Módulo Materia Prima</h4>
+            <table class="bordered">
+              <thead>
+              <tr>
+                <th>Regla</th>
+                <th>Descripción</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Crear una materia prima en el sistema</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de registrar una materia prima en el sistema se requieren los siguientes campos:
+                  nombre, unidad de medida, categoria, stock.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Eliminar un producto terminado</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de eliminar una materia prima en el sistema y esta tenga asociado una formula o un pedido solo se podra inactivar.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Ingreso al formulario de usuarios</td>
+                <td style="width: 65%; font-size: 18px">
+                  Para ingresar al formulario de materia pria se debe contar con el respectivo permiso.
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <header class="header row" style="margin-bottom: 1em; margin-top: 0">
+        <div class="col m12">
+          <h3 class="tittle">Reglas de Negocio</h3>
+        </div>
+      </header>
+      <section class="container_demo" >
+        <div class="row" style="background: #ffffff">
+          <h4 style="margin: 0; width: 100%; text-align: center; padding-top: 0.5em">Módulo Pedidos</h4>
+          <div class="col s6">
+            <table class="bordered">
+              <thead>
+              <tr>
+                <th>Regla</th>
+                <th>Descripción</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Crear un pedido en el sistema</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de registrar un pedido en el sistema se requieren los siguientes campos:
+                  número de pedido, proveedor, producto, valor unitario, cantidad, fecha, total.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Cancelar un pedido en el sistema</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de cancelar un pedido en el sistema este no puede estar en estado recibido.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Ingreso al formulario de pedidos</td>
+                <td style="width: 65%; font-size: 18px">
+                  Para ingresar al formulario de pedidos se debe contar con el respectivo permiso.
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col s6">
+            <table class="bordered">
+              <thead>
+              <tr>
+                <th>Regla</th>
+                <th>Descripción</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Cambio de estado del pedido</td>
+                <td style="width: 65%; font-size: 18px">
+                  Cuando se registra el ingreso de la totalidad de la materia prima del pedido este pasara a estado recibido.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Fecha del pedido</td>
+                <td style="width: 65%; font-size: 18px">
+                  La fecha del pedido no puede ser menor o mayor a la fecha del dia del pedido.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Proveedor unico</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de registrar un pedido este debe tener solo un proveedor asociado.
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <header class="header row" style="margin-bottom: 1em; margin-top: 0">
+        <div class="col m12">
+          <h3 class="tittle">Modelo Conceptual de Datos</h3>
+        </div>
+      </header>
+      <section class="container_demo">
+        <div class="row">
+          <div class="col s12">
+            <figure class="mapa">
+              <img src="images/modelo.png" alt="">
+            </figure>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <header class="header row">
+        <div class="col m12">
+          <h3 class="tittle">Bibliografía</h3>
+        </div>
+      </header>
+      <section class="container_demo" style="margin-top: 0">
+        <div class="row">
+          <div class="col s12">
+            <div class="bibliografia">
+              <ul>
+                <li>
+                  *  PRESSMAN, Roger S. 1998, (Marzo 9 de 2014). Ingeniería del Software: Un Enfoque Práctico. Ed.8 McGraw-Hill, Madrid.
+                </li>
+                <li>
+                  *  Builes, Carlos (2016). C4 análisis v2.0
+                </li>
+                <li>
+                  *  123rf. (04 de 04 de 2016). http://es.123rf.com. Obtenido de http://es.123rf.com: http://es.123rf.com/imagenes-de-archivo/inventario.html
+                </li>
+                <li>
+                  *  Alcalá, U. d. (05 de 04 de 2016). http://gerencia.uah.es/. Obtenido de http://gerencia.uah.es/: http://gerencia.uah.es/gerente/uniprog/procedimientosAdministrativos.asp
+                </li>
+                <li>
+                  *  Arango, F. (03 de 04 de 2016). https://riunet.upv.es. Obtenido de https://riunet.upv.es: https://riunet.upv.es/handle/10251/32782
+                </li>
+                <li>
+                  *  BONILLA, A. R. (05 de 04 de 2016). http://www.cuidatusaludemocional.com/. Obtenido de http://www.cuidatusaludemocional.com/: http://www.cuidatusaludemocional.com/2015/09/como-superar-la-angustia.html
+                </li>
+                <li>
+                  *  Campos, B. (03 de 04 de 2016). https://riunet.upv.es. Obtenido de https://riunet.upv.es: https://riunet.upv.es/handle/10251/32782
+                </li>
+                <li>
+                  *  Guanochanga Moreno, G. B. (01 de 04 de 2016). http://bibdigital.epn.edu.ec. Obtenido de http://bibdigital.epn.edu.ec: http://bibdigital.epn.edu.ec/handle/15000/2293
+                </li>
+                <li>
+                  *  Riveros, A. (04 de 04 de 2016). http://www.saludactual.cl/. Obtenido de http://www.saludactual.cl/: http://www.saludactual.cl/trastornos-mentales/trastorno_obsesivo_compulsivo_toc_ansiedad_y_miedo_extremos.php
+                </li>
+                <li>
+                  *  Toro, A. D. (01 de 04 de 2016). http://fondosdigitales.us.es. Obtenido de http://fondosdigitales.us.es: http://fondosdigitales.us.es/media/thesis/30/O_Tesis-18.pdf
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="js/materialize.js"></script>
+  <script src="vendors/jquery.easings.min.js"></script>
+
+
+  <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+  <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+  <script src="js/vendors/responsiveslides.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage();
+      $(".rslides").responsiveSlides();
+    });
+  </script>
 </body>
 </html>
