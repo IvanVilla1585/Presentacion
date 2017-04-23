@@ -5,6 +5,7 @@
   <title>Presentación</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="./css/animate.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body class="index">
@@ -135,64 +136,89 @@
     <div class="section">
       <header class="header row">
         <div class="col m12">
-          <h3 class="tittle">Delimitación y Alcance</h3>
+          <h3 class="tittle">Alcance</h3>
         </div>
       </header>
-      <section class="container_demo">
-        <div class="row">
-          <div class="col s12">
-            <div class="circulo_control row">
-              <figure class="materia">
-                <img src="images/materia.jpeg" alt="">
-              </figure>
-              <div class="circulo">
-                <p>
-                  Control y registro de
-                </p>
-              </div>
-              <figure class="margin_left reportes">
-                <img src="images/kardex.jpeg" alt="">
-              </figure>
-            </div>
-            <div class="imagenes_alcance_top row">
-              <div class="col m4">
-                <figure class="proveedores">
-                  <img style="width: 100%" src="images/proveedores.jpeg" alt="">
-                </figure>
-              </div>
-              <div class="col m4">
-                <figure class="pedidos">
-                  <img src="images/pedidos.jpeg" alt="">
-                </figure>
-              </div>
-              <div class="col m4">
-                <figure id="kardex" class="kardex">
-                  <img src="images/reportes.jpeg" alt="">
-                </figure>
-              </div>
-            </div>
-            <div class="imagenes_alcance_down row">
-              <div class="col m4">
-                <figure>
-                  <img src="images/ordenes.jpeg" alt="">
-                </figure>
-              </div>
-              <div class="col m4">
-                <figure class="producto">
-                  <img src="images/productos.jpeg" alt="">
-                </figure>
-              </div>
-              <div class="col m4">
-                <figure class="maquina">
-                  <img src="images/maquinas.jpeg" alt="">
-                </figure>
-              </div>
-            </div>
+      <section class="container_demo" style="margin-top: 0">
+        <div class="container_images_alcance wrapper">
+          <div class="imagenes_alcance" style="margin-bottom: 2em">
+            <figure class="materia" data-animate="fadeIn" data-delay="200">
+              <img src="images/materia.jpg" alt="">
+              <p>Materia Prima</p>
+            </figure>
+            <figure class="proveedores">
+              <img src="images/proveedor.jpg" alt="">
+              <p>Proveedores</p>
+            </figure>
+            <figure class="pedidos">
+              <img src="images/pedidos.jpg" alt="">
+              <p>Pedidos</p>
+            </figure>
+            <figure id="kardex" class="kardex" >
+              <img style="background: #ffffff" src="images/reportes.jpeg" alt="">
+              <p>Reportes</p>
+            </figure>
+          </div>
+          <div class="imagenes_alcance">
+            <figure  class="margin_left reportes">
+              <img src="images/kardex.jpg" alt="">
+              <p>kardex</p>
+            </figure>
+            <figure>
+              <img src="images/ordenes.jpeg" alt="">
+              <p>Órdenes</p>
+            </figure>
+            <figure class="producto">
+              <img src="images/productos.jpeg" alt="">
+              <p>Productos</p>
+            </figure>
+            <figure class="maquina">
+              <img src="images/maquinas.jpeg" alt="">
+              <p>Máquinas</p>
+            </figure>
           </div>
         </div>
       </section>
     </div>
-
+    <div class="section">
+      <header class="header row">
+        <div class="col m12">
+          <h3 class="tittle">Delimitación</h3>
+        </div>
+      </header>
+      <section class="container_demo" style="margin-top: 0">
+        <div class="container_images_delimitacion">
+          <div class="imagenes_delimitacion" style="margin-bottom: 2em">
+            <figure class="materia">
+              <img src="images/ventas.jpg" alt="">
+              <p>Ventas</p>
+            </figure>
+            <figure class="proveedores">
+              <img src="images/nomina.jpg" alt="">
+              <p>Nomina</p>
+            </figure>
+            <figure class="pedidos">
+              <img src="images/pagos.jpg" alt="">
+              <p>Pagos Terceros</p>
+            </figure>
+            <figure id="kardex" class="kardex" >
+              <img style="background: #ffffff" src="images/rotacion.jpg" alt="">
+              <p>Rotación Mercancia</p>
+            </figure>
+          </div>
+          <div class="imagenes_delimitacion" >
+            <figure class="materia">
+              <img src="images/impuestos.jpg" alt="">
+              <p>Impuestos</p>
+            </figure>
+            <figure class="proveedores">
+              <img src="images/contabilidad.jpg" alt="">
+              <p>Contabilidad</p>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </div>
     <div class="section">
       <header class="header row" style="margin-bottom: 1em; margin-top: 0">
         <div class="col m12">
@@ -476,6 +502,79 @@
       </header>
       <section class="container_demo" >
         <div class="row" style="background: #ffffff">
+          <h4 style="margin: 0; width: 100%; text-align: center; padding-top: 0.5em">Módulo Pedidos</h4>
+          <div class="col s6">
+            <table class="bordered">
+              <thead>
+              <tr>
+                <th>Regla</th>
+                <th>Descripción</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Crear un pedido en el sistema</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de registrar un pedido en el sistema se requieren los siguientes campos:
+                  número de pedido, proveedor, producto, valor unitario, cantidad, fecha, total.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Cancelar un pedido en el sistema</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de cancelar un pedido en el sistema este no puede estar en estado recibido.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Ingreso al formulario de pedidos</td>
+                <td style="width: 65%; font-size: 18px">
+                  Para ingresar al formulario de pedidos se debe contar con el respectivo permiso.
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col s6">
+            <table class="bordered">
+              <thead>
+              <tr>
+                <th>Regla</th>
+                <th>Descripción</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Cambio de estado del pedido</td>
+                <td style="width: 65%; font-size: 18px">
+                  Cuando se registra el ingreso de la totalidad de la materia prima del pedido este pasara a estado recibido.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Fecha del pedido</td>
+                <td style="width: 65%; font-size: 18px">
+                  La fecha del pedido no puede ser menor o mayor a la fecha del dia del pedido.
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 35%; font-size: 18px">Proveedor unico</td>
+                <td style="width: 65%; font-size: 18px">
+                  Al momento de registrar un pedido este debe tener solo un proveedor asociado.
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <header class="header row" style="margin-bottom: 1em; margin-top: 0">
+        <div class="col m12">
+          <h3 class="tittle">Reglas de Negocio</h3>
+        </div>
+      </header>
+      <section class="container_demo" >
+        <div class="row" style="background: #ffffff">
           <h4 style="margin: 0; width: 100%; text-align: center; padding-top: 0.5em">Módulo Usuarios</h4>
           <div class="col s6">
             <table class="bordered">
@@ -616,79 +715,7 @@
         </div>
       </section>
     </div>
-    <div class="section">
-      <header class="header row" style="margin-bottom: 1em; margin-top: 0">
-        <div class="col m12">
-          <h3 class="tittle">Reglas de Negocio</h3>
-        </div>
-      </header>
-      <section class="container_demo" >
-        <div class="row" style="background: #ffffff">
-          <h4 style="margin: 0; width: 100%; text-align: center; padding-top: 0.5em">Módulo Pedidos</h4>
-          <div class="col s6">
-            <table class="bordered">
-              <thead>
-              <tr>
-                <th>Regla</th>
-                <th>Descripción</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td style="width: 35%; font-size: 18px">Crear un pedido en el sistema</td>
-                <td style="width: 65%; font-size: 18px">
-                  Al momento de registrar un pedido en el sistema se requieren los siguientes campos:
-                  número de pedido, proveedor, producto, valor unitario, cantidad, fecha, total.
-                </td>
-              </tr>
-              <tr>
-                <td style="width: 35%; font-size: 18px">Cancelar un pedido en el sistema</td>
-                <td style="width: 65%; font-size: 18px">
-                  Al momento de cancelar un pedido en el sistema este no puede estar en estado recibido.
-                </td>
-              </tr>
-              <tr>
-                <td style="width: 35%; font-size: 18px">Ingreso al formulario de pedidos</td>
-                <td style="width: 65%; font-size: 18px">
-                  Para ingresar al formulario de pedidos se debe contar con el respectivo permiso.
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col s6">
-            <table class="bordered">
-              <thead>
-              <tr>
-                <th>Regla</th>
-                <th>Descripción</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td style="width: 35%; font-size: 18px">Cambio de estado del pedido</td>
-                <td style="width: 65%; font-size: 18px">
-                  Cuando se registra el ingreso de la totalidad de la materia prima del pedido este pasara a estado recibido.
-                </td>
-              </tr>
-              <tr>
-                <td style="width: 35%; font-size: 18px">Fecha del pedido</td>
-                <td style="width: 65%; font-size: 18px">
-                  La fecha del pedido no puede ser menor o mayor a la fecha del dia del pedido.
-                </td>
-              </tr>
-              <tr>
-                <td style="width: 35%; font-size: 18px">Proveedor unico</td>
-                <td style="width: 65%; font-size: 18px">
-                  Al momento de registrar un pedido este debe tener solo un proveedor asociado.
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-    </div>
+
     <div class="section">
       <header class="header row" style="margin-bottom: 1em; margin-top: 0">
         <div class="col m12">
@@ -698,7 +725,7 @@
       <section class="container_demo">
         <div class="row">
           <div class="col s12">
-            <figure class="mapa">
+            <figure class="mapa" style="padding: 1em; background: #ffffff">
               <img src="images/modelo.png" >
             </figure>
           </div>
