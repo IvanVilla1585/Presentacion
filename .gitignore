@@ -3,3 +3,8 @@ node_modules
 .idea
 index.js
 public/stylus
+public/index.html
+index.js
+package.json
+
+
