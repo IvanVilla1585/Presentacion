@@ -4,6 +4,8 @@ const express = require('express')
 const app = express()
 const server = http.createServer(app)
 
+const port = process.env.PORT || 8080
+
 app.use(express.static('./public'))
 
-server.listen(3000, () => { console.log('corriendo en el puerto 3000') })
+server.listen(port, () => { console.log(`server listening in port ${port}`) })
